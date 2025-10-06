@@ -1,0 +1,20 @@
+# FastAPI and web server requirements
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database and data processing
+pandas==2.1.3
+sqlalchemy==2.0.23
+# sqlite3 is built into Python - no need to install
+
+# Additional utilities
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# Machine Learning (if needed for model)
+scikit-learn==1.3.2
+numpy==1.24.3
+
+# Development and testing (optional)
+pytest==7.4.3
+httpx==0.25.2
