@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light Mode - Crisp Professional */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Sophisticated Teal */
+    --primary: 174 62% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 174 62% 65%;
+
+    /* Secondary - Subtle Card Background */
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 215 25% 15%;
+
+    /* Muted - Borders and subtle elements */
+    --muted: 210 20% 93%;
+    --muted-foreground: 215 15% 45%;
+
+    /* Accent - Amber for insights */
+    --accent: 32 95% 65%;
+    --accent-foreground: 215 25% 15%;
+
+    /* Destructive - Terracotta Red for risk */
+    --destructive: 0 72% 75%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Green for positive indicators */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 93%;
+    --ring: 174 62% 55%;
+
+    --radius: 0.5rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 62% 55%), hsl(174 62% 65%));
+    --gradient-chart: linear-gradient(180deg, hsl(174 62% 55% / 0.2), hsl(174 62% 55% / 0));
+    
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(215 25% 15% / 0.05);
+    --shadow-elevated: 0 10px 30px -10px hsl(215 25% 15% / 0.1);
+
+    /* Chart colors */
+    --chart-1: 174 62% 55%;
+    --chart-2: 32 95% 65%;
+    --chart-3: 0 72% 75%;
+    --chart-4: 142 71% 45%;
+    --chart-5: 250 70% 65%;
+  }
+
+  .dark {
+    /* Dark Mode - Data-Driven Serenity */
+    --background: 215 25% 12%;
+    --foreground: 210 20% 92%;
+
+    --card: 215 20% 18%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 215 20% 18%;
+    --popover-foreground: 210 20% 92%;
+
+    /* Primary - Sophisticated Teal */
+    --primary: 174 62% 55%;
+    --primary-foreground: 215 25% 12%;
+    --primary-glow: 174 62% 65%;
+
+    /* Secondary - Slightly lighter container */
+    --secondary: 215 20% 22%;
+    --secondary-foreground: 210 20% 92%;
+
+    /* Muted */
+    --muted: 215 20% 22%;
+    --muted-foreground: 215 15% 60%;
+
+    /* Accent - Amber for insights */
+    --accent: 32 95% 65%;
+    --accent-foreground: 215 25% 12%;
+
+    /* Destructive - Terracotta Red */
+    --destructive: 0 72% 75%;
+    --destructive-foreground: 215 25% 12%;
+
+    /* Success */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 215 20% 25%;
+    --input: 215 20% 25%;
+    --ring: 174 62% 55%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(174 62% 55%), hsl(174 62% 65%));
+    --gradient-chart: linear-gradient(180deg, hsl(174 62% 55% / 0.3), hsl(174 62% 55% / 0));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 12px 0 hsl(0 0% 0% / 0.3);
+    --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.4);
+
+    /* Chart colors */
+    --chart-1: 174 62% 55%;
+    --chart-2: 32 95% 65%;
+    --chart-3: 0 72% 75%;
+    --chart-4: 142 71% 45%;
+    --chart-5: 250 70% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium;
+  }
+
+  /* AG Grid Dark Mode Styles */
+  .dark .ag-theme-alpine {
+    --ag-background-color: hsl(var(--card));
+    --ag-header-background-color: hsl(var(--secondary));
+    --ag-odd-row-background-color: hsl(var(--card));
+    --ag-row-hover-color: hsl(var(--muted));
+    --ag-foreground-color: hsl(var(--foreground));
+    --ag-border-color: hsl(var(--border));
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+}
