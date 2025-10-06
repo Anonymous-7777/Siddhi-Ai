@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Anonymous-7777/Raahi/blob/main/Logo.png" alt="Project Siddhi Logo" width="150">
+  <img src="Siddhi_Logo.png" alt="Project Siddhi Logo" width="350">
 </p>
 
 <h1 align="center">The Siddhi Platform</h1>
@@ -146,4 +146,5 @@ This project was developed by a dedicated team of engineers and data scientists:
 ---
 
 ## 11. License
+
 
