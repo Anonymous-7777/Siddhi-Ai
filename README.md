@@ -54,7 +54,7 @@ The AI's intelligence is made accessible through a modern, three-tier applicatio
 
 ## 6. Demo Video
 
-* [**Watch the Full Project Demo on YouTube**](https://youtu.be/DsROMzhyiDg)
+* [**Watch the Full Project Demo on YouTube**](https://www.youtube.com/watch?v=54RErXbljN8)
 
 ---
 
@@ -146,6 +146,7 @@ This project was developed by a dedicated team of engineers and data scientists:
 ---
 
 ## 11. License
+
 
 
 
