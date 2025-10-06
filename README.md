@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Siddhi_Logo.png" alt="Project Siddhi Logo" width="350">
+  <img src="Siddhi_Logo.png" alt="Project Siddhi Logo" width="200">
 </p>
 
 <h1 align="center">The Siddhi Platform</h1>
@@ -146,6 +146,7 @@ This project was developed by a dedicated team of engineers and data scientists:
 ---
 
 ## 11. License
+
 
 
 
